@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+    <head>
+
+        <meta charset="utf-8">
+        <!-- <base href="/"> -->
+
+        <title>Hello World</title>
+        <meta name="description" content="Startup HTML template OptimizedHTML 5">
+
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+        <link rel="icon" href="images/favicon.png">
+        <meta property="og:image" content="images/dist/preview.jpg">
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="libs/fontawesome-free-5.15.3-web/css/all.min.css">
+        <link rel="stylesheet" href="css/main.min.css">
+    </head>
+
+    <body>
+        <main>
+            <div class="container">
+                <div class="row">
+                    <div class="col-12 d-flex justify-content-center">
+                        <ul>
+                            <li class="d-flex justify-content-center align-items-center">
+                                <label class="form-label m-0 me-3">Title:</label>
+                                <input id="search-title" type="text" class="form-control">
+                            </li>
+
+                            <li class="d-flex justify-content-center align-items-center">
+                                <label class="form-label m-0 me-3">Type:</label>
+                                <select id="search-type" class="form-select">
+                                    <option value="Movie" selected>Movie</option>
+                                    <option value="Series">Series</option>
+                                    <option value="Episode">Episode</option>
+                                </select>
+                            </li>
+
+                            <li class="d-flex justify-content-center">
+                                <div class="btn btn-primary w-50" id="search-button">Search</div>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="col-12 mt-4">
+                        <div id="result" class="row">
+                            <div class="col-12 d-flex justify-content-center">
+                                <h2>Start searching!</h2>
+                            </div>
+                        </div>
+
+                        <div class="row">
+                            <div class="col-12 d-flex justify-content-center">
+                                <button id="load-more-films" class="btn btn-primary mb-3 w-75">Load more</button>
+                            </div>
+                        </div>
+                        
+                        <!-- <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#modal">
+                            Launch demo modal
+                          </button> -->
+
+                        <div class="modal fade" id="modal">
+                            <div class="modal-dialog modal-dialog-centered modal-xl">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                                    </div>
+
+                                    <div class="modal-body">
+                                        <div class="container-fluid">
+                                            <div id="result-more-info">
+
+                                                <!-- <div class="row">
+                                                    <div class="col-4">
+                                                        <img src="https://cdn.discordapp.com/attachments/616047039712591882/853947471678668830/img2.png" alt="" class="w-100">
+                                                    </div>
+                                                    <div class="col-8 d-flex flex-column">
+                                                        <h4>Title: title</h4>
+                                                        <span><b>Rating:</b> rating</span>
+                                                        <span><b>Released:</b> released</span>
+                                                        <span><b>Genres:</b> genres, genres, genres, genres</span>
+                                                        <span><b>Director:</b> director</span>
+                                                        <span><b>Time:</b> time</span>
+                                                        <p>description</p>
+                                                    </div>
+                                                </div> -->
+
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" crossorigin="anonymous"></script>
+        <script src="js/app.js"></script>
+    </body>
+</html>
